@@ -789,6 +789,9 @@ public class DecompilerProvider extends NavigatableComponentProviderAdapter
 		SpecifyCPrototypeAction specifyCProtoAction = new SpecifyCPrototypeAction();
 		setGroupInfo(specifyCProtoAction, functionGroup, subGroupPosition++);
 
+		ChangeToThisCall changetoThisCall = new ChangeToThisCall();
+		setGroupInfo(changetoThisCall, functionGroup, subGroupPosition++);
+
 		OverridePrototypeAction overrideSigAction = new OverridePrototypeAction();
 		setGroupInfo(overrideSigAction, functionGroup, subGroupPosition++);
 
@@ -1028,6 +1031,7 @@ public class DecompilerProvider extends NavigatableComponentProviderAdapter
 		tool.addAction(listingCreateStructureAction);
 		addLocalAction(editDataTypeAction);
 		addLocalAction(specifyCProtoAction);
+		addLocalAction(changetoThisCall);
 		addLocalAction(overrideSigAction);
 		addLocalAction(deleteSigAction);
 		addLocalAction(renameFunctionAction);
