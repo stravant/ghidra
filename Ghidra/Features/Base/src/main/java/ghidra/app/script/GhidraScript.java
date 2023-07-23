@@ -2987,7 +2987,7 @@ public abstract class GhidraScript extends FlatProgramAPI {
 	 * for a secret, usually a password or other credential. There is no pre-population of the
 	 * input. If the user cancels the dialog, it is immediately disposed, and any input to that
 	 * dialog is cleared from memory. If the user completes the dialog, then the secret is returned
-	 * in a wrapped buffer. The buffer can be cleared by calling {@link Secret#close()}; however, it
+	 * in a wrapped buffer. The buffer can be cleared by calling {@link Password#close()}; however, it
 	 * is meant to be used in a {@code try-with-resources} block. The pattern does not guarantee
 	 * protection of the secret, but it will help you avoid some typical pitfalls:
 	 * 
